@@ -10,9 +10,9 @@ Name:       Pengcheng Zhu
 Position:   TTS Research && Development Engineer
 Email:      Pengcheng.Zhu@nuance.com / Pczhu@nwpu-aslp.org
 
-+==================================================================================+
-| Currennt Install                                                                 |
-+==================================================================================+
++===============================================================================+
+| Currennt Install                                                              |
++===============================================================================+
 Building on Linux requires the following:
 * CUDA Toolkit 5.0
 * GCC 4.6 or higher
@@ -21,22 +21,22 @@ Building on Linux requires the following:
 Link: https://sourceforge.net/projects/currennt/files/?source=navbar
 
 To build Currennt execute the following commands:
-##> cd currennt
-##> mkdir build && cd build
-##> cmake ..
-##> make
+> cd currennt
+> mkdir build && cd build
+> cmake ..
+> make
 
-+==================================================================================+
-| Word2vec                                                                         |
-+==================================================================================+
++===============================================================================+
+| Word2vec                                                                      |
++===============================================================================+
 Source file link :http://pan.baidu.com/s/1qYnFOZi
 using command :
 make 
 to compile, and exe word2vec can running.
 
-+==================================================================================+
-| Python Toolkit Emviroment                                                        |
-+==================================================================================+
++===============================================================================+
+| Python Toolkit Emviroment                                                     |
++===============================================================================+
 To run this script successfully we need toolkits as following:
 * StringIO
 * numpy
@@ -50,28 +50,28 @@ Format: pip install [toolkit name]
 netCDF4 Setup:
 ref:https://pythonhosted.org/cdb_query/install_source.html
 commands:
-##>pip install numpy
-##>pip install sqlalchemy
-##>pip install Cython
-##>pip install python-dateutil
-##> wget --no-check-certificate \
+>pip install numpy
+>pip install sqlalchemy
+>pip install Cython
+>pip install python-dateutil
+> wget --no-check-certificate \
       https://pypi.python.org/packages/source/v/virtualenv/virtualenv-1.11.2.tar.gz
-##>tar xvfz virtualenv-1.11.2.tar.gz
-##>cd virtualenv-1.11.2
-##>python virtualenv.py $HOME/python
-##>source $HOME/python/bin/activate
-##>pip install numpy
-##>pip install sqlalchemy
-##>pip install Cython
-##>pip install python-dateutil
-##>export USE_NCCONFIG=1;pip install netcdf4
+>tar xvfz virtualenv-1.11.2.tar.gz
+>cd virtualenv-1.11.2
+>python virtualenv.py $HOME/python
+>source $HOME/python/bin/activate
+>pip install numpy
+>pip install sqlalchemy
+>pip install Cython
+>pip install python-dateutil
+>export USE_NCCONFIG=1;pip install netcdf4
 If there has some problems,please use:
-##>pip install h5py
-##>pip install netcdf4
+>pip install h5py
+>pip install netcdf4
 
-+==================================================================================+
-| Trainning Model and test                                                         |
-+==================================================================================+
++===============================================================================+
+| Trainning Model and test                                                      |
++===============================================================================+
 1. put corpus in folder 'corpus'
 2. set configs in file config:
    Example:
@@ -114,12 +114,12 @@ If there has some problems,please use:
      17. [corpus]:corpus folder
      18. [projectfolder]: whole project prosition
 3. Command:
-##>source $HOME/python/bin/activate
-##>python LstmPosTagging-Alpha.py
+>source $HOME/python/bin/activate
+>python LstmPosTagging-Alpha.py
 
-+==================================================================================+
-| Using trained well model to do test                                              |
-+==================================================================================+
++===============================================================================+
+| Using trained well model to do test                                           |
++===============================================================================+
 1. make sure model in 'autosave/trained_network.jsn'
 2. make sure word2vec dictionary in 'dct/pkuvec'
 3. make sure pos list in 'dct/posinfo'
@@ -134,6 +134,6 @@ If there has some problems,please use:
    [sentencefile]: input text file
    [outfilename]:  output file 
 5. command:
-##>source $HOME/python/bin/activate
-##>python LstmPosTaggingonline-Alpha.py
+>source $HOME/python/bin/activate
+>python LstmPosTaggingonline-Alpha.py
 Tip: U can use log to debug.
