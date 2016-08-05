@@ -21,10 +21,10 @@ Building on Linux requires the following:
 Link: https://sourceforge.net/projects/currennt/files/?source=navbar
 
 To build Currennt execute the following commands:
-> cd currennt
-> mkdir build && cd build
-> cmake ..
-> make
+\> cd currennt
+\> mkdir build && cd build
+\> cmake ..
+\> make
 
 +===============================================================================+
 | Word2vec                                                                      |
@@ -50,24 +50,24 @@ Format: pip install [toolkit name]
 netCDF4 Setup:
 ref:https://pythonhosted.org/cdb_query/install_source.html
 commands:
->pip install numpy
->pip install sqlalchemy
->pip install Cython
->pip install python-dateutil
-> wget --no-check-certificate \
+\>pip install numpy
+\>pip install sqlalchemy
+\>pip install Cython
+\>pip install python-dateutil
+\> wget --no-check-certificate \
       https://pypi.python.org/packages/source/v/virtualenv/virtualenv-1.11.2.tar.gz
->tar xvfz virtualenv-1.11.2.tar.gz
->cd virtualenv-1.11.2
->python virtualenv.py $HOME/python
->source $HOME/python/bin/activate
->pip install numpy
->pip install sqlalchemy
->pip install Cython
->pip install python-dateutil
->export USE_NCCONFIG=1;pip install netcdf4
+\>tar xvfz virtualenv-1.11.2.tar.gz
+\>cd virtualenv-1.11.2
+\>python virtualenv.py $HOME/python
+\>source $HOME/python/bin/activate
+\>pip install numpy
+\>pip install sqlalchemy
+\>pip install Cython
+\>pip install python-dateutil
+\>export USE_NCCONFIG=1;pip install netcdf4
 If there has some problems,please use:
->pip install h5py
->pip install netcdf4
+\>pip install h5py
+\>pip install netcdf4
 
 +===============================================================================+
 | Trainning Model and test                                                      |
@@ -114,8 +114,8 @@ If there has some problems,please use:
      17. [corpus]:corpus folder
      18. [projectfolder]: whole project prosition
 3. Command:
->source $HOME/python/bin/activate
->python LstmPosTagging-Alpha.py
+\>source $HOME/python/bin/activate
+\>python LstmPosTagging-Alpha.py
 
 +===============================================================================+
 | Using trained well model to do test                                           |
@@ -134,6 +134,6 @@ If there has some problems,please use:
    [sentencefile]: input text file
    [outfilename]:  output file 
 5. command:
->source $HOME/python/bin/activate
->python LstmPosTaggingonline-Alpha.py
+\>source $HOME/python/bin/activate
+\>python LstmPosTaggingonline-Alpha.py
 Tip: U can use log to debug.
