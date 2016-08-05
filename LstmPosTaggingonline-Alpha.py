@@ -1,7 +1,7 @@
 #!/usr/bin/python2
 #@Author: Pengcheng Zhu
 #@Date: 6/16/2016
-#@Copyright: Nuance.Inc 2016
+#@Copyright: IRC.Inc 2016
 import codecs
 import os
 import logging
